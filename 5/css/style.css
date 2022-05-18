@@ -1,9 +1,10 @@
 body {
     background-color: snow;
+    /* background-image: url(../tn_swimming_pool_1327986510_thumb.jpg); */
 }
 
 header {
-    background-color: lavender;
+    background-color: rgb(215, 215, 219);
 }
 
 h1,
@@ -54,7 +55,7 @@ table th {
 
 #r1c2 {
     background-color: rgba(0, 255, 17, 0.436);
-    background-image: url(http://www.balilandproperty.com/media/com_iproperty/pictures/seminyak-villa-05g_1318518206_thumb.jpg);
+    background-image: url(../tn_swimming_pool_1327986510_thumb.jpg);
 }
 
 #r1c3 {
@@ -64,7 +65,7 @@ table th {
 
 #r1c4 {
     background-color: rgba(105, 85, 239, 0.436);
-    background-image: url(http://www.balilandproperty.com/media/com_iproperty/pictures/tn_eden_roof_top_1327986509_thumb.jpg);
+    background-image: url(../seminyak-villa-05g_1318518206_thumb.jpg);
 }
 
 #r2c1 {
@@ -74,7 +75,7 @@ table th {
 
 #r2c2 {
     background-color: rgba(169, 28, 224, 0.436);
-    background-image: url(http://www.balilandproperty.com/media/com_iproperty/pictures/seminyak-villa-05g_1318518206_thumb.jpg);
+    background-image: url(../tn_swimming_pool_1327986510_thumb.jpg);
 }
 
 #r2c3 {
@@ -84,7 +85,7 @@ table th {
 
 #r2c4 {
     background-color: rgba(197, 232, 56, 0.436);
-    background-image: url(http://www.balilandproperty.com/media/com_iproperty/pictures/tn_eden_roof_top_1327986509_thumb.jpg);
+    background-image: url(../seminyak-villa-05g_1318518206_thumb.jpg);
 }
 
 #r3c1 {
@@ -94,7 +95,7 @@ table th {
 
 #r3c2 {
     background-color: rgba(97, 217, 241, 0.436);
-    background-image: url(http://www.balilandproperty.com/media/com_iproperty/pictures/seminyak-villa-05g_1318518206_thumb.jpg);
+    background-image: url(../tn_swimming_pool_1327986510_thumb.jpg);
 }
 
 #r3c3 {
@@ -104,7 +105,7 @@ table th {
 
 #r3c4 {
     background-color: rgba(60, 231, 177, 0.436);
-    background-image: url(http://www.balilandproperty.com/media/com_iproperty/pictures/tn_eden_roof_top_1327986509_thumb.jpg);
+    background-image: url(../seminyak-villa-05g_1318518206_thumb.jpg);
 }
 
 #r4c1 {
@@ -114,7 +115,7 @@ table th {
 
 #r4c2 {
     background-color: rgba(84, 237, 232, 0.436);
-    background-image: url(http://www.balilandproperty.com/media/com_iproperty/pictures/seminyak-villa-05g_1318518206_thumb.jpg);
+    background-image: url(../tn_swimming_pool_1327986510_thumb.jpg);
 }
 
 #r4c3 {
@@ -124,7 +125,7 @@ table th {
 
 #r4c4 {
     background-color: rgba(192, 249, 196, 0.436);
-    background-image: url(http://www.balilandproperty.com/media/com_iproperty/pictures/tn_eden_roof_top_1327986509_thumb.jpg);
+    background-image: url(../seminyak-villa-05g_1318518206_thumb.jpg);
 }
 
 
