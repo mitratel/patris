@@ -80,10 +80,12 @@ p {
 /* Table */
 
 .tg {
+    width: 90%;
     border-collapse: collapse;
     border-color: #ccc;
     border-spacing: 0;
     margin: 0px auto;
+    table-layout: fixed;
 }
 
 .tg td {
@@ -92,12 +94,12 @@ p {
     border-color: #ccc;
     border-style: solid;
     border-top-width: 1px;
-    border-width: 0px;
+    border-width: 1px;
     color: #333;
     font-family: Arial, sans-serif;
     font-size: 14px;
     overflow: hidden;
-    padding: 10px 5px;
+    padding: 10px 10px;
     word-break: normal;
 }
 
@@ -118,12 +120,11 @@ p {
 }
 
 .tg .tg-ul38 {
-    position: -webkit-sticky;
     position: sticky;
-    text-align: left;
+    text-align: center;
     top: -1px;
     vertical-align: top;
-    will-change: transform
+    /* will-change: transform */
 }
 
 .tg .tg-buh4 {
@@ -135,4 +136,38 @@ p {
 .tg .tg-0lax {
     text-align: left;
     vertical-align: top
+}
+
+
+/* Form */
+
+#form {
+    margin: 1em;
+    padding: 5px;
+    background-color: #f9f9f9;
+    /* padding-right: 2em; */
+    font-family: 'Mulish', sans-serif;
+    display: flexbox;
+}
+
+
+/* Button */
+
+#saveForm {
+    background: #133;
+    color: white;
+    border-style: double;
+    border-color: #0066A2;
+    height: 50px;
+    width: 100px;
+    font: bold 18px arial, sans-serif;
+    text-shadow: burlywood;
+}
+
+#saveForm:hover {
+    height: 52px;
+    width: 102px;
+    color: seashell;
+    background: navy;
+    border-color: rgb(159, 84, 244);
 }

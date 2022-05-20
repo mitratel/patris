@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webdesign Les 15</title>
+    <title>Contactformulier</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,13 +25,78 @@
             </ul>
         </nav>
     </header>
-    <h1>Inleiding</h1>
-    <p><img src="278204619.jpg" width="20%"><i>Grote affiniteit met computers, accuraat, geduldig, betrouwbaar, team player maar kan uitstekend zelfstandig functioneren. Ambitieus, kritisch, zorgvuldig, en ondernemend. Internationale werkervaring (management
-        en eigen onderneming) en dienstverlenend ingesteld.</i>
-        <br> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id cumque deleniti quas numquam. Nam, saepe mollitia tempore totam ipsam tempora molestias dolore assumenda cum porro incidunt sunt repellendus deserunt voluptas.<br><br> Lorem
-        ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ipsum beatae qui corporis sunt, doloribus maxime odio dolorum repellat consequatur non mollitia dicta provident dolores ab optio reiciendis porro facere. <br><br> Lorem ipsum dolor, sit
-        amet consectetur adipisicing elit. Ipsa ipsum beatae qui corporis sunt, doloribus maxime odio dolorum repellat consequatur non mollitia dicta provident dolores ab optio reiciendis porro facere.</p>
-    <br><br><br>
+    <h1>Contactformulier</h1>
+
+    <br>
+
+    <form id="form" enctype="multipart/form-data" method="post" action="https://formspree.io/f/myyollqn">
+
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <br>
+
+            <label for="voorNaam">Voornaam:&nbsp;&nbsp;&nbsp; </label>
+            <span>
+                <input id="name" type="text" maxlength="255" size="20" name="name"/>
+                
+            </span> <br>
+
+            <label for="achterNaam">Achternaam: </label>
+            <span>
+                <input id="name" type="text" maxlength="255" size="20" name="name"/>
+                
+            </span> <br>
+
+            <label>Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <span>
+                        <input id="email" name="email" type="email" maxlength="255" value="" />
+                    <!-- </span> &nbsp;
+            <label>Telefoon: </label>
+            <span>
+                            <input id="phone" name="telefoon" type="text" maxlength="255" value="" />
+                        </span> -->
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Geslacht</legend>
+            <br>
+            <span>
+                <input id="radio" name="radio"  type="radio" value="1" />
+    <label  for="label">Man</label>
+    <input id="radio" name="radio"  type="radio" value="2" />
+    <label  for="label">Vrouw</label>
+    <input id="radio" name="radio"  type="radio" value="3" />
+    <label  for="label">NVT</label>
+    
+            </span>
+            <br><br>
+            <div> <label for="label">Upload eventueel een bijlage: </label>
+
+                <input name="file" type="file" />
+            </div>
+
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Bericht</legend>
+            <br>
+            <label class="description" for="element_6"> </label>
+            <div>
+                <textarea id="textarea" name="textarea" maxlength="1500" rows="6" cols="50"></textarea>
+            </div>
+
+            <label class="description" for="label">Geboortedatum:</label>
+
+            <input type="date" name="date"> <br>
+
+
+            <br>
+            <input id="saveForm" type="submit" name="submit" value="Verstuur" />
+        </fieldset>
+    </form>
+
+
     <footer>
         <copyright>2022 R.M. All rights reserved.</copyright>
 
