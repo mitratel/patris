@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Example LES 25</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style type="text/css">
+        body {
+            background-color: seashell;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 5px;
+            overflow: hidden;
+            background-color: #133;
+            /* position: fixed; */
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px 18px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: gray;
+            color: rgb(141, 252, 252);
+        }
+        
+        header {
+            background-color: rgb(159, 84, 244);
+            margin: 1em;
+        }
+        
+        h1,
+        h2 {
+            color: navy;
+            position: relative;
+            text-align: center;
+            margin: 0.5em;
+            background-color: antiquewhite;
+            padding: 5px;
+        }
+        
+        footer {
+            background-color: antiquewhite;
+            color: rgba(43, 44, 2, 0.925);
+            text-align: center;
+            margin: 1em;
+            padding: 5px;
+        }
+        
+        footer:hover {
+            font-weight: bold;
+        }
+        
+        p {
+            color: rgb(47, 2, 80);
+            margin: 1em;
+            padding: 5px;
+            /* padding-right: 2em; */
+            font-family: 'Mulish', sans-serif;
+            /* background-color: antiquewhite; */
+        }
+        
+        #form {
+            margin: 1em;
+            padding: 5px;
+            background-color: #f9f9f9;
+            /* padding-right: 2em; */
+            font-family: 'Mulish', sans-serif;
+            display: flexbox;
+        }
+        /* Button */
+        
+        #saveForm {
+            background: #133;
+            color: white;
+            border-style: double;
+            border-color: #0066A2;
+            height: 50px;
+            width: 100px;
+            font: bold 18px arial, sans-serif;
+            text-shadow: burlywood;
+        }
+        
+        #saveForm:hover {
+            height: 52px;
+            width: 102px;
+            color: seashell;
+            background: navy;
+            border-color: rgb(159, 84, 244);
+        }
+    </style>
+    <script type="text/javascript">
+        const alertStat = (e) => {
+            if ($('#radio1').prop('checked')) {
+
+                $('#label1').css({
+                    'color': 'red',
+                    'font-size': '1.5rem'
+                });
+                $('#label2').css({
+                    'color': 'black',
+                    'font-size': ' 1rem'
+                });
+                $('#label3').css({
+                    'color': 'black',
+                    'font-size': ' 1rem'
+                });
+                alert('Je bent een man.');
+            } else if ($('#radio2').prop('checked')) {
+                $('#label1').css({
+                    'color': 'black',
+                    'font-size': ' 1rem'
+                });
+                $('#label3').css({
+                    'color': 'black',
+                    'font-size': ' 1rem'
+                });
+                alert('Je bent een vrouw.');
+                $('#label2').css({
+                    'color': 'red',
+                    'font-size': '1.5rem'
+                });
+            } else {
+                $('#label3').css({
+                    'color': 'red',
+                    'font-size': '1.5rem'
+                });
+                $('#label1').css({
+                    'color': 'black',
+                    'font-size': ' 1rem'
+                });
+                $('#label2').css({
+                    'color': 'black',
+                    'font-size': ' 1rem'
+                });
+                window.setTimeout('alert("Onzijdig");alert.close();', 1000);
+                //   alert('Onzijdig.');
+            }
+
+        };
+
+        // Attaching the click event on the button
+        $(document).on("click", "#radio1", alertStat);
+        $(document).on("click", "#radio2", alertStat);
+        $(document).on("click", "#radio3", alertStat);
+    </script>
+    <noscript>Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.</noscript>
+</head>
+<h1>Jquery Contact</h1>
+
+<br>
+
+<form id="form" enctype="multipart/form-data" method="post" action="https://formspree.io/f/myyollqn">
+
+    <fieldset>
+        <legend>Persoonlijke gegevens</legend>
+        <br>
+
+        <label for="voorNaam">Voornaam:&nbsp;&nbsp;&nbsp; </label>
+        <span>
+                <input id="name" type="text" maxlength="255" size="20" name="name"/>
+                
+            </span> <br>
+
+        <label for="achterNaam">Achternaam: </label>
+        <span>
+                <input id="name" type="text" maxlength="255" size="20" name="name"/>
+                
+            </span> <br>
+
+        <label>Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+        <span>
+                        <input id="email" name="email" type="email" maxlength="255" value="" />
+                    
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Geslacht</legend>
+        <br>
+        <span>
+                <input id="radio1" name="radio"  type="radio" value="1" />
+    <label  for="label1" id="label1">Man</label>
+    <input id="radio2" name="radio"  type="radio" value="2" />
+    <label  for="label2" id="label2">Vrouw</label>
+    <input id="radio3" name="radio"  type="radio" value="3" />
+    <label  for="label3" id="label3">NVT</label>
+    
+            </span>
+        <br><br>
+        <div> <label for="label">Upload eventueel een bijlage: </label>
+
+            <input name="file" type="file" />
+        </div>
+
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Bericht</legend>
+        <br>
+        <label class="description" for="element_6"> </label>
+        <div>
+            <textarea id="textarea" name="textarea" maxlength="1500" rows="6" cols="50"></textarea>
+        </div>
+
+        <label class="description" for="label">Geboortedatum:</label>
+
+        <input type="date" name="date"> <br>
+
+
+        <br>
+        <input id="saveForm" type="submit" name="submit" value="Verstuur" />
+    </fieldset>
+</form>
+
+
+<footer>
+    <copyright>2022 R.M. All rights reserved.</copyright>
+
+</footer>
+
+<body>
+
+</body>
+
+</html>
