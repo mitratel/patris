@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap" rel="stylesheet">
+
+    <title>Amsterdam</title>
+    <style type="text/css">
+        [class*="col-"] {
+            width: 100%;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            [class*="col-"] {
+                float: left;
+                padding: 15px;
+            }
+            .col-1 {
+                width: 8.33%;
+            }
+            .col-2 {
+                width: 16.66%;
+            }
+            .col-3 {
+                width: 25%;
+            }
+            .col-4 {
+                width: 33.33%;
+            }
+            .col-5 {
+                width: 41.66%;
+            }
+            .col-6 {
+                width: 50%;
+            }
+            .col-7 {
+                width: 58.33%;
+            }
+            .col-8 {
+                width: 66.66%;
+            }
+            .col-9 {
+                width: 75%;
+            }
+            .col-10 {
+                width: 83.33%;
+            }
+            .col-11 {
+                width: 91.66%;
+            }
+            .col-12 {
+                width: 100%;
+            }
+        }
+        
+        header {
+            height: 100%;
+            /* background-size: 100%; */
+            /* background-repeat: repeat; */
+            background-image: url("kinkerstraat_jaren_zeventig.jpg");
+            padding: 0.5em;
+        }
+        
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: darkgrey;
+            color: white;
+        }
+        
+        h1 {
+            font-family: 'Mulish', sans-serif;
+        }
+        
+        h2 {
+            margin: 0.7em;
+            padding: 5px;
+        }
+        
+        p {
+            font-family: 'Mulish', sans-serif;
+            margin: 1em;
+            padding: 5px;
+        }
+        
+        .centre {
+            background-color: rgba(206, 195, 195, 0.521);
+        }
+        
+        img {
+            float: right;
+            /* border-radius: 6%; */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            vertical-align: text-bottom;
+            margin-left: 1em;
+        }
+        
+        footer {
+            /* height: 100%; */
+            background-color: antiquewhite;
+            text-align: center;
+            display: inline-block;
+            /* display: grid; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Amsterdam</h1>
+    </header>
+
+    <div class="row">
+        <div class="col-2 menu">
+            <ul>
+                <li>Van Gogh Museum</li>
+                <li>Rijksmuseum</li>
+                <li>Vondelpark</li>
+                <li>Ontstaan in 1306</li>
+                <li>Kanalen en Grachten</li>
+            </ul>
+        </div>
+        <div class="col-9 centre">
+            <div>
+                <h2>Rijksmuseum</h2>
+                <p><img src="Amsterdam-Travel-Blog-1280x719.jpg" width="20%">Het Rijksmuseum in Amsterdam is een van de zestien rijksmusea in Nederland. De collectie biedt een overzicht van de Nederlandse kunst en geschiedenis met onder andere werken van
+                    17e-eeuwse Nederlandse meesters als Rembrandt, Vermeer en Hals. Het museum is sinds 1885 gevestigd in het Rijksmuseumgebouw dat ontworpen werd door de Nederlandse architect Pierre Cuypers. <br><br> De kunstverzameling die de stadhouderlijke
+                    familie door de eeuwen had opgebouwd vormt de basis van de collectie van het Rijksmuseum. </p>
+            </div>
+            <hr>
+            <div>
+                <h2>Vondelpark</h2>
+                <p><img src="vondelpark.jpg" width="20%">Het Vondelpark is een langgerekt stadspark in Amsterdam, daterend uit 1865. Het park ligt in het stadsdeel Amsterdam-Zuid, op de grens met het stadsdeel Amsterdam-West en ten zuidwesten van de Amsterdamse
+                    grachtengordel.
+                    <br><br>Het strekt zich uit van de Stadhouderskade tot aan de Amstelveenseweg. Bij de opening in 1865 heette het park het Nieuwe Park, in de volksmond Wandelpark. Na de onthulling in oktober 1867 van het Vondelmonument, een standbeeld
+                    ter ere van de dichter en toneelschrijver Joost van den Vondel, werd de naam gewijzigd in Vondelpark. </p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="col-12">
+        <copyright> &copy; 2022 R.M. All rights reserved.</copyright>
+
+    </footer>
+</body>
+
+</html>
