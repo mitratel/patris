@@ -1,0 +1,224 @@
+        @import url('https://fonts.googleapis.com/css2?family=Caveat+Script&display=swap');
+        [class*="col-"] {
+            width: 100%;
+            height: 100%;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            [class*="col-"] {
+                float: left;
+                /* padding: 15px; */
+            }
+            .col-1 {
+                width: 8.33%;
+            }
+            .col-2 {
+                width: 16.66%;
+            }
+            .col-3 {
+                width: 25%;
+            }
+            .col-4 {
+                width: 33.33%;
+                /* height: 100%; */
+                /* background-color: rgba(103, 46, 46, 0.521); */
+            }
+            .col-5 {
+                width: 41.66%;
+            }
+            .col-6 {
+                width: 50%;
+            }
+            .col-7 {
+                width: 58.33%;
+            }
+            .col-8 {
+                width: 66.66%;
+            }
+            .col-9 {
+                width: 75%;
+            }
+            .col-10 {
+                width: 83.33%;
+            }
+            .col-11 {
+                width: 91.66%;
+            }
+            .col-12 {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (max-width: 767px) {
+            body {
+                color: darkslategrey;
+            }
+            .menu ul {
+                background-color: green;
+                display: block;
+                overflow: visible;
+                flex-direction: column;
+            }
+            .menu li {
+                background-color: rgba(206, 195, 195, 0.521);
+                display: block;
+                /* position: relative; */
+            }
+        }
+        
+         :root {
+            font-family: 'Kanit', sans-serif;
+            font-size: 1.2rem;
+        }
+        
+        header {
+            /* height: 100%; */
+            /* background-size: 100%; */
+            /* background-repeat: repeat; */
+            background-color: gainsboro;
+            padding-top: 0.8rem;
+            /* padding-bottom: 0.8rem; */
+            text-align: center;
+            /* margin-top: 2rem; */
+        }
+        
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: rgb(91, 152, 201);
+            /* vertical-align: middle; */
+        }
+        
+        .menu li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 8px 18px;
+            text-decoration: none;
+        }
+        
+        .menu li a:hover {
+            background-color: gray;
+            color: rgb(141, 252, 252);
+        }
+        
+        h2 {
+            margin: 0.7em;
+            padding: 5px;
+            color: maroon;
+        }
+        
+        p {
+            /* font-family: 'Mulish', sans-serif; */
+            margin: 1em;
+            padding: 5px;
+        }
+        
+        h3 {
+            margin: 1em;
+            padding: 5px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        h4 {
+            margin: 1em;
+            padding: 5px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        h5 {
+            margin: 1em;
+            padding: 5px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            /* font-weight: bolder; */
+        }
+        
+        footer {
+            /* height: 100%; */
+            background-color: gainsboro;
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 0.7em;
+        }
+        
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            /* height: 100%; */
+        }
+        
+        .row {
+            /* height: 100%; */
+            float: left;
+        }
+        /* Formulier */
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 95%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        
+        input[type=email] {
+            width: 95%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        
+        .btn-default {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: steelblue;
+            padding: 12px 12px;
+            float: left;
+            margin: 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            /* float: left; */
+        }
+        
+        .btn-default:hover {
+            color: steelblue;
+            background-color: gainsboro;
+        }
+        
+        .container {
+            border-radius: 5px;
+            /* background-color: #f2f2f2; */
+            padding: 20px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .quoteText {
+            font-size: 2rem;
+            font-family: 'Caveat Script', cursive;
+        }
+        
+        .quoteAuthor {
+            font-size: 2.5rem;
+            font-family: 'Caveat Script', cursive;
+            color: rebeccapurple;
+        }
